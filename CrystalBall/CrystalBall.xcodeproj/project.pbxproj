@@ -21,6 +21,7 @@
 		5BC189F918F4E91200DFD0F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC189DB18F4E91200DFD0F0 /* UIKit.framework */; };
 		5BC18A0118F4E91200DFD0F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BC189FF18F4E91200DFD0F0 /* InfoPlist.strings */; };
 		5BC18A0318F4E91200DFD0F0 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18A0218F4E91200DFD0F0 /* CrystalBallTests.m */; };
+		5BC18A0E18F5098000DFD0F0 /* ABCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC18A0D18F5098000DFD0F0 /* ABCrystalBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		5BC189FE18F4E91200DFD0F0 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		5BC18A0018F4E91200DFD0F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BC18A0218F4E91200DFD0F0 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		5BC18A0C18F5098000DFD0F0 /* ABCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCrystalBall.h; sourceTree = "<group>"; };
+		5BC18A0D18F5098000DFD0F0 /* ABCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCrystalBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				5BC189ED18F4E91200DFD0F0 /* ABViewController.m */,
 				5BC189EF18F4E91200DFD0F0 /* Images.xcassets */,
 				5BC189DE18F4E91200DFD0F0 /* Supporting Files */,
+				5BC18A0C18F5098000DFD0F0 /* ABCrystalBall.h */,
+				5BC18A0D18F5098000DFD0F0 /* ABCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			files = (
 				5BC189E418F4E91200DFD0F0 /* main.m in Sources */,
 				5BC189EE18F4E91200DFD0F0 /* ABViewController.m in Sources */,
+				5BC18A0E18F5098000DFD0F0 /* ABCrystalBall.m in Sources */,
 				5BC189E818F4E91200DFD0F0 /* ABAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
