@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ABViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
+
 - (IBAction)buttonPressed;
 
 @end
