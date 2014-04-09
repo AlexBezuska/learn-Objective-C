@@ -20,10 +20,7 @@
     [super viewDidLoad];
     self.crystalball = [[ABCrystalBall alloc] init];
     
-    UIImage *backgroundImage = [UIImage imageNamed:@"background"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:backgroundImage];
-    [self.view insertSubview:imageView atIndex:0];
-	
+  
     
 }
 
@@ -37,9 +34,21 @@
     self.predictionLabel.text = [self.crystalball randomPrediction];
 }
 
+-(void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    NSLog(@"motion Began");
+    self.predictionLabel.text = nil;
+}
+-(void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    NSLog(@"motion ended");
+    if(motion == UIEventSubtypeMotionShake){
+        self.predictionLabel.text = [self.crystalball randomPrediction];
+    }
+}
 
 
-
+-(void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+ NSLog(@"motion cancelled");
+}
 
 
 
