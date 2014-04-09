@@ -53,9 +53,9 @@
 
 - (IBAction)buttonPressed {
     //NSLog(@"Button Pressed");
+    int random = arc4random_uniform(self.predictions.count);
     
-    
-    self.predictionLabel.text = [self.predictions objectAtIndex:10];
+    self.predictionLabel.text = [self.predictions objectAtIndex:random];
 }
 
 
